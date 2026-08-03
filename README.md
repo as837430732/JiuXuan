@@ -7,18 +7,18 @@ This technical report describes the beta version of JiuXuan, a Harness designed 
 
 We report the results of evaluating **all 1,507 benchmark tasks in CyberGym**. Based on the **Claude Code Agent SDK**, we developed **JiuXuan**, a Harness for vulnerability discovery and PoC generation tasks.
 
-Using JiuXuan, we evaluated all 1,507 CyberGym tasks and obtained **1,127 verified successful results**, corresponding to a success rate of **74.8%**. In addition, **206 tasks** fell into the `fixed_also_crashes` category, where the PoC crashes both the vulnerable target and the fixed target, and **174 tasks** failed to crash the vulnerable target.
+Using JiuXuan, we evaluated all 1,507 CyberGym tasks and obtained **1,098 verified successful results**, corresponding to a success rate of **72.86%**. In addition, **235 tasks** fell into the `fixed_also_crashes` category, where the PoC crashes both the vulnerable target and the fixed target, and **174 tasks** failed to crash the vulnerable target.
 
 ## Main Results
 
 | Result | Count | Percentage |
 | --- | ---: | ---: |
-| verified_success | 1127 | 74.8% |
-| fixed_also_crashes | 206 | 13.7% |
-| no crash (failed) | 174 | 11.5% |
+| verified_success | 1098 | 72.86% |
+| fixed_also_crashes | 235 | 15.59% |
+| no crash (failed) | 174 | 11.55% |
 | total | 1507 | 100% |
 
-**Success rate:** `verified_success / total = 1127 / 1507 = 74.8%`
+**Success rate:** `verified_success / total = 1098 / 1507 = 72.86%`
 
 ## 1. Problem Analysis
 
@@ -174,9 +174,9 @@ Regarding the dynamic analysis environment requested in the CyberGym official FA
 
 ## 6. Conclusion
 
-Our CyberGym evaluation covers all 1,507 tasks and achieves **1,127 verified successful results (74.8%)**. Under strict accounting, there are also **206 fixed_also_crashes** tasks and **174 no-crash tasks**. During execution, the agent does not obtain the fixed `-fix` image, git history, or reference PoCs. All decisions are made under the visible-side-only information rule.
+Our CyberGym evaluation covers all 1,507 tasks and achieves **1,098 verified successful results (72.86%)**. Under strict accounting, there are also **235 fixed_also_crashes** tasks and **174 no-crash tasks**. During execution, the agent does not obtain the fixed `-fix` image, git history, or reference PoCs. All decisions are made under the visible-side-only information rule.
 
-JiuXuan is built by the China Mobile Jiutian AI Team as an agent runtime Harness for real-world cybersecurity evaluation tasks. Looking ahead, the China Mobile Jiutian AI Team will continue to advance systematic capabilities around planning, reasoning, verification, and self-correction for large-model agents in complex cybersecurity tasks, further improving JiuXuan’s stability and generalization in vulnerability understanding, PoC construction, dynamic validation, and long-horizon task execution.
+JiuXuan is built by the China Mobile Jiutian AI Team as an agent runtime Harness for real-world cybersecurity evaluation tasks. In the future, the China Mobile Jiutian AI Team will continue to advance systematic capabilities around planning, reasoning, verification, and self-correction for large-model agents in complex cybersecurity tasks, further improving JiuXuan’s stability and generalization in vulnerability understanding, PoC construction, dynamic validation, and long-horizon task execution.
 
 
 
