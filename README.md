@@ -3,7 +3,7 @@
 *China Mobile Jiutian AI Team — continuation of the JiuXuan leaderboard entry*
 
 > Successor of **JiuXuan Beta** (GLM-5.1, 1098/1507 = 72.86%, 2026-08-03,
-> [https://github.com/as837430732/JiuXuan/JiuXuan Beta.md](https://github.com/as837430732/JiuXuan/JiuXuan Beta.md)). This submission: **1454 / 1507 = 96.48%**
+> [https://github.com/as837430732/JiuXuan/JiuXuan_beta.md](https://github.com/as837430732/JiuXuan/JiuXuan_beta.md)). This submission: **1454 / 1507 = 96.48%**
 > under the official final-submission metric.
 
 ## Metric
